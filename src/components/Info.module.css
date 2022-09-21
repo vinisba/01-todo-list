@@ -1,0 +1,20 @@
+.todoInfo {
+  color: var(--blue-400);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.active {
+  composes: todoInfo;
+  color: var(--purple-300);
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--gray-400);
+  border-radius: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  margin-left: 0.75rem;
+  color: var(--gray-200);
+}

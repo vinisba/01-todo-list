@@ -1,5 +1,5 @@
 import { Header } from "./Header";
-import { TodoInput } from "./TodoInput";
+import { Todos } from "./Todos";
 
 import styles from "./App.module.css";
 
@@ -7,9 +7,10 @@ export function App() {
   return (
     <>
       <Header />
+
       <main>
         <div className={styles.wrapper}>
-          <TodoInput />
+          <Todos />
         </div>
       </main>
     </>

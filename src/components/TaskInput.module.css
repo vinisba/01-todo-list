@@ -1,8 +1,8 @@
-.todoInput {
+.taskInput {
   display: flex;
 }
 
-.todoInput > input {
+.taskInput > input {
   flex: 1;
   background-color: var(--gray-500);
   border: 1px solid var(--gray-700);
@@ -12,12 +12,12 @@
   line-height: 1.4;
 }
 
-.todoInput > input:focus {
+.taskInput > input:focus {
   border: 1px solid var(--purple-400);
   box-shadow: none;
 }
 
-.todoInput > button {
+.taskInput > button {
   display: flex;
   align-items: center;
   background-color: var(--blue-600);
@@ -33,10 +33,10 @@
   transition: background-color 0.1s;
 }
 
-.todoInput > button:hover {
+.taskInput > button:hover {
   background-color: var(--blue-400);
 }
 
-.todoInput > button svg {
+.taskInput > button svg {
   margin-left: 0.5rem;
 }
