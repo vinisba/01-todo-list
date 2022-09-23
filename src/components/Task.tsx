@@ -14,10 +14,12 @@ export function Task({
 }: TaskProps) {
   return (
     <li className={styles.task}>
-      <button
-        onClick={() => onToggleComplete(id)}
-        className={completed ? styles.checked : styles.check}
-      />
+      <div>
+        <button
+          onClick={() => onToggleComplete(id)}
+          className={completed ? styles.checked : styles.check}
+        />
+      </div>
       <span
         className={completed ? styles.taskContentCompleted : styles.taskContent}
       >
