@@ -45,3 +45,11 @@
 .taskInput > button svg {
   margin-left: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .taskInput {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
