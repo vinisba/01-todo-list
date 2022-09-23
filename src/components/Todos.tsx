@@ -14,8 +14,8 @@ export function Todos() {
   const completedTasksLength = tasks.filter((task) => task.completed).length;
 
   function handleFormSubmit(content: string) {
-    setTasks([
-      ...tasks,
+    setTasks((state) => [
+      ...state,
       {
         id: uuidv4(),
         content,
@@ -26,8 +26,8 @@ export function Todos() {
   }
 
   function handleTaskUpdateComplete(id: string) {
-    setTasks(
-      tasks.map((task) => {
+    setTasks((state) =>
+      state.map((task) => {
         if (task.id === id) {
           return { ...task, completed: !task.completed };
         }
@@ -38,7 +38,7 @@ export function Todos() {
   }
 
   function handleTaskDelete(id: string) {
-    setTasks(tasks.filter((task) => task.id !== id));
+    setTasks((state) => state.filter((task) => task.id !== id));
   }
 
   return (
